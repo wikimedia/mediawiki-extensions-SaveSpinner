@@ -8,7 +8,7 @@
 	"descriptionmsg": "savespinner-desc",
 	"type": "extension",
 	"requires": {
-		"MediaWiki": ">= 1.36.0"
+		"MediaWiki": ">= 1.35.0"
 	},
 	"AutoloadNamespaces": {
 		"MediaWiki\\Extension\\SaveSpinner\\": "includes/"
