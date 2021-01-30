@@ -95,7 +95,7 @@
 	};
 
 	/**
-	 * @return {Boolean}
+	 * @return {boolean}
 	 */
 	SaveSpinner.prototype.isPopupIframe = function () {
 		try {
