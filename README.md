@@ -3,7 +3,7 @@ page edit form and FormEdit special page.
 
 # Requirements
 
-* Mediawiki 1.36+
+* Mediawiki 1.35+
 
 # Setup
 
