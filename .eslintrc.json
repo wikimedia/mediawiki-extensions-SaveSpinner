@@ -9,7 +9,6 @@
 		"browser": true
 	},
 	"rules": {
-		"one-var": "off",
 		"vars-on-top": "off",
 		"no-new": "off"
 	}
