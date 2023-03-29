@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"savespinner-desc": "Legger til visuell tilbakemelding når man lagrer, forhåndsviser eller endrer sider."
+}
