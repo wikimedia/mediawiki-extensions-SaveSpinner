@@ -17,7 +17,7 @@
 	}
 
 	SaveSpinner.prototype.initialize = function () {
-		var self = this,
+		const self = this,
 			/* eslint-disable no-jquery/no-global-selector */
 			$saveBtn = $( '#wpSave' ),
 			$previewBtn = $( '#wpPreview' ),
@@ -33,7 +33,7 @@
 		this.buildSpinnerWrapper();
 
 		if ( $saveBtn ) {
-			$( document ).on( 'click', '#wpSave', function () {
+			$( document ).on( 'click', '#wpSave', () => {
 				self.onClick( event );
 			} );
 		}
@@ -42,21 +42,21 @@
 			// Hack for PageForms preview button - there is no better way so far without intrusion
 			// into PageForms scripts or this requires deeper investigation
 			if ( this.isForm ) {
-				$( document ).on( 'click', '#wpPreview', function ( event ) {
+				$( document ).on( 'click', '#wpPreview', ( event ) => {
 					self.onClick( event );
-					setTimeout( function () {
+					setTimeout( () => {
 						self.hideSpinner();
 					}, 3000 );
 				} );
 			} else {
-				$( document ).on( 'click', '#wpPreview', function () {
+				$( document ).on( 'click', '#wpPreview', () => {
 					self.onClick( event );
 				} );
 			}
 		}
 
 		if ( $diffBtn ) {
-			$( document ).on( 'click', '#wpDiff', function () {
+			$( document ).on( 'click', '#wpDiff', () => {
 				self.onClick( event );
 			} );
 		}
@@ -67,7 +67,7 @@
 	};
 
 	SaveSpinner.prototype.buildSpinnerWrapper = function () {
-		var $innerHtml;
+		let $innerHtml;
 
 		this.$spinner = $( '<div>' ).addClass( 'savespinner-wrapper' );
 		$innerHtml = $( '<div>' ).addClass( 'lds-ring' )
