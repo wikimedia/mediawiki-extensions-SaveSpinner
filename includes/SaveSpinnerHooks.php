@@ -4,7 +4,7 @@
 
 namespace MediaWiki\Extension\SaveSpinner;
 
-use EditPage;
+use MediaWiki\EditPage\EditPage;
 use MediaWiki\Hook\EditPage__showEditForm_initialHook;
 use OutputPage;
 
